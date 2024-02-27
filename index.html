@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Compressor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        form {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        p.message {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" enctype="multipart/form-data">
+        <h2>Video Compressor</h2>
+        <input type="file" name="file" accept="video/mp4">
+        <input type="number" name="bitrate" placeholder="Enter bitrate in kbps">
+        <input type="submit" value="Compress Video">
+         
+        <p class="message"> Flash converter</p>
+        
+    </form>
+</body>
+</html>
